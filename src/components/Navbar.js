@@ -10,6 +10,7 @@ import BNavbar from 'react-bootstrap/Navbar';
 
 
 import logo from '../img/logo.png'
+import CartWidget from './CartWidget';
 
 export default function Navbar() {
   return (
@@ -34,6 +35,7 @@ export default function Navbar() {
               <Nav.Link href="#link">Contacto</Nav.Link>
             </Nav>
           </BNavbar.Collapse>
+          <CartWidget />
       </Container>
     </BNavbar>
   )

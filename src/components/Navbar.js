@@ -13,6 +13,8 @@ import logo from '../img/logo.png'
 import CartWidget from './CartWidget';
 
 export default function Navbar() {
+    
+
   return (
     <BNavbar bg="light" expand="lg">
       <Container>
@@ -40,3 +42,9 @@ export default function Navbar() {
     </BNavbar>
   )
 }
+
+
+/*
+
+
+*/

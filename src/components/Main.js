@@ -5,7 +5,7 @@ import ItemListContainer from './ItemListContainer'
 export default function Main() {
   return (
     <Container className='mt-5'>
-        <ItemListContainer greeting='Hola Mundo!' />
+        <ItemListContainer greeting='Bienvenidos a mi e-commerce!' />
     </Container>
   )
 }

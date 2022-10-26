@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount from './ItemCount';
 
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -8,13 +9,21 @@ import Row from 'react-bootstrap/Row';
 
 export default function ItemDetail(props) {
 
+    console.log(props);
     const {
+      id,  
       img,  
       title,
       summary,
       author,
       price,
+      stock,
     } = props;
+    console.log(img);
+    const onAdd = (count, id) => {
+            console.log(`Agregaste ${count} unidades del producto ID N° ${id}`);
+    }
+
 
     return (
         <Container className='mt-5' >
@@ -28,9 +37,8 @@ export default function ItemDetail(props) {
                                 <ListGroup.Item className='p-0 mb-4'>Author: {author}</ListGroup.Item>
                                 <ListGroup.Item className='p-0 mb-4'>Price: {price}</ListGroup.Item>
                             </ListGroup>
+                            <ItemCount initial={0} id={id} stock={stock} onAdd={onAdd}/>
                         </Card.Body>
-
-                        
                     </Col>
                 
             </Row>

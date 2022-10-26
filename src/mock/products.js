@@ -3,6 +3,7 @@ const products = [
     {
         id: '978-1501110368',
         title: 'It Ends with Us',
+        summary: "From the #1 New York Times bestselling author of It Starts with Us and All Your Perfects, a “brave and heartbreaking novel that digs its claws into you and doesn’t let go, long after you’ve finished it” (Anna Todd, New York Times bestselling author) about a workaholic with a too-good-to-be-true romance can’t stop thinking about her first love.",
         author:'Colleen Hoover',
         publisher: 'Atria',
         language: 'English',
@@ -16,6 +17,7 @@ const products = [
     {
         id: '978-0593189641',
         title: 'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones',
+        summary: "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
         author:'James Clear',
         publisher: 'Penguin',
         language: 'English',
@@ -29,7 +31,7 @@ const products = [
     {
         id: '978-0141983769',
         title: 'Why we sleep',
-        summary: "Sleep is one of the most important but least understood aspects of our life, wellness, and longevity. Until very recently, science had no answer to the question of why we sleep, or what good it served, or why we suffer such devastating health consequences when we don't sleep. Compared to the other basic drives in life—eating, drinking, and reproducing—the purpose of sleep remained elusive.\n",
+        summary: "Sleep is one of the most important but least understood aspects of our life, wellness, and longevity. Until very recently, science had no answer to the question of why we sleep, or what good it served, or why we suffer such devastating health consequences when we don't sleep. Compared to the other basic drives in life—eating, drinking, and reproducing—the purpose of sleep remained elusive.",
         author:'Matthew Walker',
         publisher: 'Penguin',
         language: 'English',
@@ -43,6 +45,7 @@ const products = [
     {
         id: '978-1720043997',
         title: 'The Road to React: Your journey to master plain yet pragmatic React.js',
+        summary: "In 'The Road to React' you will learn about all the fundamentals of React.js with Hooks while building a full-blown React application step by step. While you create the React application, every chapter will introduce you to a new React key feature. However, there is more than only the fundamentals: The book dives into related topics (e.g. React with TypeScript, Testing, Performance Optimizations) and advanced feature implementations like client- and server-side searching. At the end of the book, you will have a fully working deployed React application.",
         author:'Robin Wieruch',
         publisher: ' Independently published',
         language: 'English',

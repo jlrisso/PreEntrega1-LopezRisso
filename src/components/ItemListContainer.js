@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import getItems from '../mock/products'
+import { getItems } from '../mock/products'
 import ItemList from './ItemList';
 
 export default function ItemListContainer({greeting}) {

@@ -29,6 +29,7 @@ const products = [
     {
         id: '978-0141983769',
         title: 'Why we sleep',
+        summary: "Sleep is one of the most important but least understood aspects of our life, wellness, and longevity. Until very recently, science had no answer to the question of why we sleep, or what good it served, or why we suffer such devastating health consequences when we don't sleep. Compared to the other basic drives in life—eating, drinking, and reproducing—the purpose of sleep remained elusive.\n",
         author:'Matthew Walker',
         publisher: 'Penguin',
         language: 'English',
@@ -55,13 +56,20 @@ const products = [
 ];
 
 
-const getItems = () => new Promise ((resolve, reject) => 
-    {
-        setTimeout(() => {
-            resolve(products);
-        }, 2000);
+export const getItems = () => new Promise ((resolve, reject) => 
+{
+    setTimeout(() => {
+        resolve(products);
+    }, 2000);
     
-    });
+});
 
 
-export default getItems;
+export const getItem =() => new Promise ((resolve, reject) => 
+{
+    
+    setTimeout(() => {
+        resolve(products.find(product => product.id === '978-0141983769'));
+    }, 2000);
+
+});

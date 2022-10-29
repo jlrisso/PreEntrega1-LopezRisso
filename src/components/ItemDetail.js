@@ -8,8 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 export default function ItemDetail(props) {
-
-    console.log(props);
+    
     const {
       id,  
       img,  
@@ -19,7 +18,8 @@ export default function ItemDetail(props) {
       price,
       stock,
     } = props;
-    console.log(img);
+   
+
     const onAdd = (count, id) => {
             console.log(`Agregaste ${count} unidades del producto ID N° ${id}`);
     }

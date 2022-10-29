@@ -11,7 +11,7 @@ const products = [
         price: 2300,
         stock: 10,
         weight: 13.4,
-        category: 'Fiction',
+        category: 'Science Fiction',
         img: 'https://m.media-amazon.com/images/I/51m34-qLjUL._SX320_BO1,204,203,200_.jpg',
     },
     {
@@ -25,7 +25,7 @@ const products = [
         price: 4250,
         stock: 8,
         weight: 11.4,
-        category: 'Psychology',
+        category: 'Health',
         img: 'https://m.media-amazon.com/images/I/412gUd3iiKL._SX331_BO1,204,203,200_.jpg',
     },
     {

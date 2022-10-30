@@ -8,8 +8,8 @@ export default function Main() {
   return (
     <Container className='mt-5'>
         <Routes>
-            <Route path='/' element={<ItemListContainer greeting='Hola Mundo!' />} />
-            <Route path='/category/:categoryName' element={<ItemListContainer greeting='Hola Mundo!' />} />
+            <Route path='/' element={<ItemListContainer/>} />
+            <Route path='/category/:categoryName' element={<ItemListContainer/>} />
             <Route path='/detail/:bookId' element={<ItemDetailContainer />} />
         </Routes>
     </Container>

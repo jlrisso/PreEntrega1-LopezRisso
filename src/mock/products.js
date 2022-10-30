@@ -61,7 +61,6 @@ const products = [
 
 export const getItems = (categoryName) => new Promise ((resolve, reject) => 
 {
-   
     setTimeout(() => {
         resolve(categoryName? 
                 products.filter(product => 

@@ -24,7 +24,7 @@ export default function Item(props) {
         <ListGroup className="list-group-flush">
             <ListGroup.Item>Author: {author}</ListGroup.Item>
             <ListGroup.Item>Price: {price}</ListGroup.Item>
-            <ListGroup.Item><Link to={`/detail/${id}`}>See Details...</Link></ListGroup.Item>
+            <ListGroup.Item><Link className='detailbtn__link' to={`/detail/${id}`}>See Details...</Link></ListGroup.Item>
         </ListGroup>
       </Card.Body>
     </Card>

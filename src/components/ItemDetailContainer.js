@@ -10,7 +10,7 @@ export default function ItemDetailContainer() {
     const {bookId} = useParams();
 
     useEffect(() => {
-        getItem()
+        getItem(bookId)
             .then(data => {
                 setItem(data);
             })

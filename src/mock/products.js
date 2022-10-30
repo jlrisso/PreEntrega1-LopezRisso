@@ -53,26 +53,29 @@ const products = [
         price: 4250,
         stock: 4,
         weight: 1.3,
-        category: 'Psychology',
+        category: 'Education',
         img: 'https://m.media-amazon.com/images/I/41BUWD+Jv6L._SX384_BO1,204,203,200_.jpg',
     },
 ];
 
 
-export const getItems = () => new Promise ((resolve, reject) => 
+export const getItems = (categoryName) => new Promise ((resolve, reject) => 
 {
+   
     setTimeout(() => {
-        resolve(products);
+        resolve(categoryName? 
+                products.filter(product => 
+                    product.category.replace(/ /g, "").toLowerCase() === categoryName) 
+                    : products);
     }, 2000);
     
 });
 
 
-export const getItem =() => new Promise ((resolve, reject) => 
+export const getItem =(bookId) => new Promise ((resolve, reject) => 
 {
-    
     setTimeout(() => {
-        resolve(products.find(product => product.id === '978-0141983769'));
+        resolve(products.find(product => product.id === bookId));
     }, 2000);
 
 });

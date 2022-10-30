@@ -5,12 +5,12 @@ import {useParams} from 'react-router-dom';
 
 export default function ItemListContainer({greeting}) {
 
+  const [items, setItems] = useState([]);
+  
   const {categoryName} = useParams();
 
-  const [items, setItems] = useState([]);
-
   useEffect(() => {
-    getItems()
+    getItems(categoryName)
       .then(data => {
           setItems(data);
       })

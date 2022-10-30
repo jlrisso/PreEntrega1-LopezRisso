@@ -10,7 +10,7 @@ export default function Main() {
         <Routes>
             <Route path='/' element={<ItemListContainer greeting='Hola Mundo!' />} />
             <Route path='/category/:categoryName' element={<ItemListContainer greeting='Hola Mundo!' />} />
-            <Route path='/detail' element={<ItemDetailContainer />} />
+            <Route path='/detail/:bookId' element={<ItemDetailContainer />} />
         </Routes>
     </Container>
   )

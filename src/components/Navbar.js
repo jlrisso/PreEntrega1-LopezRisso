@@ -38,10 +38,10 @@ export default function Navbar() {
               <Nav.Link href="#link">Store</Nav.Link>
               <Nav.Link href="#link">Contact</Nav.Link>
               <NavDropdown title="Categories" id="basic-nav-dropdown">
-                <NavDropdown.Item ><Link className='navbar__links' to="/category/sciencefiction">Science Fiction</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link className='navbar__links' to="/category/health">Health</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link className='navbar__links' to="/category/literature">Literature</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link className='navbar__links' to="/category/business">Business</Link></NavDropdown.Item>
+                <NavDropdown.Item as={Link} className='navbar__links' to="/category/sciencefiction">Science Fiction</NavDropdown.Item>
+                <NavDropdown.Item as={Link} className='navbar__links' to="/category/health">Health</NavDropdown.Item>
+                <NavDropdown.Item as={Link} className='navbar__links' to="/category/education">Education</NavDropdown.Item>
+                <NavDropdown.Item as={Link} className='navbar__links' to="/category/business">Business</NavDropdown.Item>
             </NavDropdown>
             </Nav>
           </BNavbar.Collapse>

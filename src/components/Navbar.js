@@ -33,15 +33,15 @@ export default function Navbar() {
           <BNavbar.Toggle aria-controls="basic-navbar-nav" />
           <BNavbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#link">About Us</Nav.Link>
-              <Nav.Link href="#link">News</Nav.Link>
-              <Nav.Link href="#link">Store</Nav.Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <Nav.Link href="#link" disabled={true}>About Us</Nav.Link>
+              <Nav.Link href="#link" disabled={true}>News</Nav.Link>
+              <Nav.Link href="#link" disabled={true}>Store</Nav.Link>
+              <Nav.Link href="#link" disabled={true}>Contact</Nav.Link>
               <NavDropdown title="Categories" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} className='navbar__links' to="/category/sciencefiction">Science Fiction</NavDropdown.Item>
                 <NavDropdown.Item as={Link} className='navbar__links' to="/category/health">Health</NavDropdown.Item>
                 <NavDropdown.Item as={Link} className='navbar__links' to="/category/education">Education</NavDropdown.Item>
-                <NavDropdown.Item as={Link} className='navbar__links' to="/category/business">Business</NavDropdown.Item>
+                <NavDropdown.Item as={Link} className='navbar__links' to="/category/business" disabled={true}>Business</NavDropdown.Item>
             </NavDropdown>
             </Nav>
           </BNavbar.Collapse>

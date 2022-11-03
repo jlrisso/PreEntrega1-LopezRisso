@@ -2,13 +2,18 @@ import React from 'react'
 import ItemCount from './ItemCount';
 
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 export default function ItemDetail(props) {
     
+    const [showProceedToCheckoutBtn, setShowProceedToCheckoutBtn] = useState (false);
+
     const {
       id,  
       img,  
@@ -22,6 +27,7 @@ export default function ItemDetail(props) {
 
     const onAdd = (count, id) => {
             console.log(`Agregaste ${count} unidades del producto ID N° ${id}`);
+            setShowProceedToCheckoutBtn(true);
     }
 
 
@@ -37,7 +43,10 @@ export default function ItemDetail(props) {
                                 <ListGroup.Item className='p-0 mb-4'>Author: {author}</ListGroup.Item>
                                 <ListGroup.Item className='p-0 mb-4'>Price: {price}</ListGroup.Item>
                             </ListGroup>
-                            <ItemCount initial={0} id={id} stock={stock} onAdd={onAdd}/>
+                            {showProceedToCheckoutBtn ? 
+                                <Button as={Link} variant="primary" to={`/cart/${id}`}>Proceed to checkout</Button> :
+                                <ItemCount initial={0} id={id} stock={stock} onAdd={onAdd}/>
+                            }
                         </Card.Body>
                     </Col>
                 

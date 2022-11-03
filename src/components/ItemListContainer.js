@@ -22,7 +22,7 @@ export default function ItemListContainer() {
 
   return (
     <>
-      <div><ItemList items={items}/></div>
+      {items.length === 0 ? <h3>Loading Books...</h3> : <div><ItemList items={items}/></div>}
     </>
   )
 }

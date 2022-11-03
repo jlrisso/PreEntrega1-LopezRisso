@@ -24,7 +24,7 @@ export default function ItemCount({stock, initial, onAdd, id}) {
                 variant="primary"
                 disabled={count === 0}
                 onClick={() => onAdd(count, id)}
-                >Agregar al carrito
+                >Add to cart
             </Button>
     </>
   )

@@ -17,7 +17,9 @@ export default function ItemDetailContainer() {
             .catch( errorMessage => {
                 console.error(errorMessage);
             })
-    }, []);
+    }, [bookId]); //Aunque en este caso NO VAMOS a utilizar este cambio, lo dejamos asi
+                  //para evitar el warning que tira React. Tranquilamente podemos dejarlo
+                  //con los [] vacíos.
 
     return (
         <div><ItemDetail {...item}/></div>

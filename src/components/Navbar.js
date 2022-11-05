@@ -45,7 +45,7 @@ export default function Navbar() {
             </NavDropdown>
             </Nav>
           </BNavbar.Collapse>
-          <CartWidget />
+          <Link className='navbar__links' to="/cart"><CartWidget /></Link>
       </Container>
     </BNavbar>
   )

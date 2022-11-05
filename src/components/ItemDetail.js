@@ -8,13 +8,11 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import {Link} from 'react-router-dom';
-import { CartContext } from '../context/CartContext';
 
-export default function ItemDetail({item}) {
+export default function ItemDetail(props) {
     
     const [showProceedToCheckoutBtn, setShowProceedToCheckoutBtn] = useState (false);
 
-    const {addToCart} = useContext(CartContext); 
 
     const {
       id,  
@@ -24,13 +22,12 @@ export default function ItemDetail({item}) {
       author,
       price,
       stock,
-    } = item;
+    } = props;
    
 
     const onAdd = (count, id) => {
             console.log(`Agregaste ${count} unidades del producto ID N° ${id}`);
             setShowProceedToCheckoutBtn(true);
-            addToCart(item, count);
     }
 
 

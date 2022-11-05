@@ -22,6 +22,6 @@ export default function ItemDetailContainer() {
                   //con los [] vacíos.
 
     return (
-        <div><ItemDetail {...item}/></div>
+        <div><ItemDetail item = {item}/></div>
     )
 }
